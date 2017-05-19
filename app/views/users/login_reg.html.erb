@@ -1,0 +1,26 @@
+<h3>Login</h3>
+<form action="login" method="POST">
+  <input name="authenticity_token" value="<%= form_authenticity_token %>" type="hidden">
+  <label for="user[email]">Email:</label><br>
+  <input name="user[email]" type="text"><br>
+  <label for="user[password]">Password</label><br>
+  <input for="user=[password]" type="password"><br>
+  <input type="submit" value="Login"><br>
+</form>
+
+<hr>
+<h3>Register</h3>
+<form action="register" method="POST">
+  <input name="authenticity_token" value="<%= form_authenticity_token %>" type="hidden">
+  <label for="user[name]">Name:</label><br>
+  <input name="user[name]" type="text"><br>
+  <label for="user[username]">Username:</label><br>
+  <input name="user[username]" type="text"><br>
+  <label for="user[email]">Email:</label><br>
+  <input name="user[email]" type="text"><br>
+  <label for="user[password]">Password</label><br>
+  <input name="user[password]" type="password"><br>
+  <label for="user[password_confirmation]">Password</label><br>
+  <input name="user[password_confirmation]" type="password"><br>
+  <input type="submit" value="Regster">
+</form>
