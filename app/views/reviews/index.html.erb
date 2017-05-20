@@ -1,1 +1,14 @@
 <h3>Reviews</h3>
+
+<a href="/books/new">Add Book and Review</a> 
+<br>
+<hr>
+
+<% @reviews.each do |r| %>
+    Score: <%= r.score %><br>
+    Comment: <%= r.comment %><br>
+    Book: <%= r.book[:title] %><br>
+    Reviewer: <%= r.user[:username] %><br>
+    <hr>
+<% end %><br>
+

@@ -10,7 +10,7 @@ Rails.application.routes.draw do
   get 'users/:id' => 'users#show'
 
   get 'reviews' => 'reviews#index'
-  get 'books' => 'books#new'
+  get 'books/new' => 'books#new'
   post 'books' => 'books#create'
 
   get 'books/:id' => 'books#show'
